@@ -1,0 +1,4 @@
+../BSP/bsp_adc.c:32:9:bsp_adc_init	16	static
+../BSP/bsp_adc.c:51:9:bsp_adc_start	16	static
+../BSP/bsp_adc.c:69:9:bsp_adc_stop	8	static
+../BSP/bsp_adc.c:86:11:bsp_get_adc_buffer	4	static

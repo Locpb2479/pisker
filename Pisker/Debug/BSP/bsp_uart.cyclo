@@ -1,0 +1,7 @@
+../BSP/bsp_uart.c:43:19:bsp_uart_pc_control_init	1
+../BSP/bsp_uart.c:54:19:bsp_uart_pc_control_buffer_init	1
+../BSP/bsp_uart.c:63:19:bsp_uart_start_pc_control_receive	1
+../BSP/bsp_uart.c:70:19:bsp_uart_pc_control_send	1
+../BSP/bsp_uart.c:76:19:bsp_uart_pc_control_handle_it	1
+../BSP/bsp_uart.c:82:19:bsp_uart_dfp_init	1
+../BSP/bsp_uart.c:93:19:bsp_uart_dfp_send	1

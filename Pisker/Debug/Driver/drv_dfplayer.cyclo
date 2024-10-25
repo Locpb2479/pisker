@@ -1,0 +1,11 @@
+../Driver/drv_dfplayer.c:33:23:drv_df_playfromstart	1
+../Driver/drv_dfplayer.c:39:23:drv_df_init	1
+../Driver/drv_dfplayer.c:50:23:drv_df_next	1
+../Driver/drv_dfplayer.c:56:23:drv_df_pause	1
+../Driver/drv_dfplayer.c:62:23:drv_df_previous	1
+../Driver/drv_dfplayer.c:68:23:drv_df_playback	1
+../Driver/drv_dfplayer.c:75:23:drv_df_playrandom	1
+../Driver/drv_dfplayer.c:82:6:drv_df_send_cmd	1
+../Driver/drv_dfplayer.c:90:23:drv_df_playfile	1
+../Driver/drv_dfplayer.c:97:23:drv_df_up_volume	2
+../Driver/drv_dfplayer.c:109:23:drv_df_down_volume	1

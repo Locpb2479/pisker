@@ -1,0 +1,36 @@
+@startuml system_manager
+skinparam arrowcolor red
+skinparam stateBackgroundColor yellow  
+
+[*] --> MENU_STATE
+MENU_STATE: Start stage when the device is on
+DIGITAL_CLOCK_STATE: Display digital clock icon
+SET_ALARM_STATE: Display a golden bell represents for alarm
+SET_RTC_STATE: Display a text for setting time and date for the device
+MUSIC_STATE: Display an icon of a music note
+
+SYSTEM_SET_ALARM: Dislay set alarm screen
+SYSTEM_SET_TIME: Dislay set time screen
+SYSTEM_DIGITAL_CLOCK:  Dislay digital clock
+SYSTEM_SOUND: Play music via SD card
+
+MENU_STATE --> MENU_STATE: else
+MENU_STATE --> DIGITAL_CLOCK_STATE: Single click
+DIGITAL_CLOCK_STATE --> SYSTEM_DIGITAL_CLOCK: Double click
+SYSTEM_DIGITAL_CLOCK --> DIGITAL_CLOCK_STATE: Hold button >= 3 seconds
+
+DIGITAL_CLOCK_STATE --> SET_ALARM_STATE: Single click
+SET_ALARM_STATE --> SYSTEM_SET_ALARM: Double click
+SYSTEM_SET_ALARM --> SET_ALARM_STATE: Hold button >= 3 seconds
+
+SET_ALARM_STATE --> SET_RTC_STATE: Single click
+SET_RTC_STATE --> SYSTEM_SET_TIME: Double click
+SYSTEM_SET_TIME --> SET_RTC_STATE: Hold button >= 3 seconds
+
+SET_RTC_STATE --> MUSIC_STATE: Single click
+MUSIC_STATE --> DIGITAL_CLOCK_STATE: Single click
+MUSIC_STATE --> SYSTEM_SOUND: Double click
+SYSTEM_SOUND --> MUSIC_STATE: Hold button >= 3 seconds
+
+@enduml
+

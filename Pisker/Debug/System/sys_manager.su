@@ -1,0 +1,4 @@
+../System/sys_manager.c:51:13:sys_manager_update	16	static
+../System/sys_manager.c:145:20:sys_manager_init	8	static
+../System/sys_manager.c:155:20:sys_manager_run	24	static
+../System/sys_manager.c:226:6:sys_checking_alarm	16	static

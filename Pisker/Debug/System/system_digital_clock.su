@@ -1,0 +1,4 @@
+../System/system_digital_clock.c:27:6:sys_digital_clock_init	4	static
+../System/system_digital_clock.c:32:6:sys_digital_clock_fsm_update	16	static
+../System/system_digital_clock.c:50:10:sys_digital_clock_fsm_action	8	static
+../System/system_digital_clock.c:67:6:sys_digital_clock_loop	16	static

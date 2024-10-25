@@ -1,0 +1,3 @@
+../BSP/bsp_btn.c:36:6:bsp_button_init	16	static
+../BSP/bsp_btn.c:47:13:bsp_btn_check_state_one_button	32	static
+../BSP/bsp_btn.c:170:6:bsp_reset_info	4	static

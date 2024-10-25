@@ -1,0 +1,3 @@
+../System/sys_sound.c:30:20:sys_sound_init	1
+../System/sys_sound.c:36:6:sys_sound_fsm	9
+../System/sys_sound.c:75:20:sys_sound_loop	1

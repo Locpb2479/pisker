@@ -1,0 +1,4 @@
+../System/system_set_time.c:31:6:sys_set_time_init	4	static
+../System/system_set_time.c:35:6:sys_set_time_fsm_update	16	static
+../System/system_set_time.c:148:10:sys_set_time_fsm_action	8	static
+../System/system_set_time.c:238:10:sys_set_time_loop	16	static

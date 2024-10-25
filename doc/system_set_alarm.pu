@@ -1,0 +1,32 @@
+@startuml systen_set_alarm
+skinparam arrowcolor red
+skinparam stateBackgroundColor yellow  
+
+[*] --> SET_ALARM_STATE
+SET_ALARM_STATE: Display a golden bell represents for alarm
+
+DISPLAY_BLINKING_HOUR_ALARM: Display time and blink the hour part
+DISPLAY_BLINKING_MINUTE_ALARM: Display time and blink the minutes part
+DISPLAY_BLINKING_SECOND_ALARM: Display time and blink the seconds part
+
+DISPLAY_BLINKING_HOUR_ALARM_PLUS_1: Display time and blink the hour part plus 1
+DISPLAY_BLINKING_MINUTE_ALARM_PLUS_1: Display time and blink the minutes part plus 1
+DISPLAY_BLINKING_SECOND_ALARM_PLUS_1: Display time and blink the seconds part plus 1
+
+SET_ALARM_STATE --> DISPLAY_BLINKING_HOUR_ALARM: Double click
+DISPLAY_BLINKING_HOUR_ALARM --> DISPLAY_BLINKING_MINUTE_ALARM: Double click
+DISPLAY_BLINKING_MINUTE_ALARM --> DISPLAY_BLINKING_SECOND_ALARM: Double click
+DISPLAY_BLINKING_SECOND_ALARM --> DISPLAY_BLINKING_HOUR_ALARM: Double click
+
+DISPLAY_BLINKING_HOUR_ALARM --> DISPLAY_BLINKING_HOUR_ALARM_PLUS_1: Single click
+DISPLAY_BLINKING_HOUR_ALARM_PLUS_1 --> DISPLAY_BLINKING_HOUR_ALARM: Increase hour value by 1
+DISPLAY_BLINKING_MINUTE_ALARM --> DISPLAY_BLINKING_MINUTE_ALARM_PLUS_1: Single click
+DISPLAY_BLINKING_MINUTE_ALARM_PLUS_1 --> DISPLAY_BLINKING_MINUTE_ALARM: Increase minute value by 1
+DISPLAY_BLINKING_SECOND_ALARM --> DISPLAY_BLINKING_SECOND_ALARM_PLUS_1: Single click
+DISPLAY_BLINKING_SECOND_ALARM_PLUS_1 --> DISPLAY_BLINKING_SECOND_ALARM: Increase second value by 1
+
+DISPLAY_BLINKING_HOUR_ALARM --> SET_ALARM_STATE: Hold button >= 3 seconds
+DISPLAY_BLINKING_MINUTE_ALARM --> SET_ALARM_STATE: Hold button >= 3 seconds
+DISPLAY_BLINKING_SECOND_ALARM --> SET_ALARM_STATE: Hold button >= 3 secondS
+
+@enduml

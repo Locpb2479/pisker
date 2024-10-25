@@ -1,0 +1,8 @@
+../Driver/drv_rtc.c:40:9:drv_rtc_bcd_to_dec	16	static
+../Driver/drv_rtc.c:45:9:drv_rtc_dec_to_bcd	16	static
+../Driver/drv_rtc.c:51:10:drv_rtc_get_time	16	static
+../Driver/drv_rtc.c:95:10:drv_rtc_set_time	24	static
+../Driver/drv_rtc.c:150:10:drv_rtc_get_rtc_ds1307	4	static
+../Driver/drv_rtc.c:170:10:drv_rtc_set_alarm	16	static
+../Driver/drv_rtc.c:208:10:drv_rtc_check_alarms	16	static
+../Driver/drv_rtc.c:233:10:drv_rtc_set_time_epoch	40	static

@@ -1,0 +1,17 @@
+@startuml system_sound
+skinparam arrowcolor red
+skinparam stateBackgroundColor yellow  
+
+[*] --> MUSIC_STATE
+MUSIC_STATE: Display an icon of a music note
+
+PLAY_SONG: Play the song in SD card and start FFT
+STOP_SONG: Stop the song that is playing
+
+MUSIC_STATE --> PLAY_SONG: Single click
+PLAY_SONG --> STOP_SONG: Single click
+PLAY_SONG --> MUSIC_STATE: Hold button >= 3 seconds
+STOP_SONG --> PLAY_SONG: Single click
+STOP_SONG --> MUSIC_STATE: Hold button >= 3 seconds
+
+@enduml

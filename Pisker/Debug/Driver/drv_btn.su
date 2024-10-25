@@ -1,0 +1,2 @@
+../Driver/drv_btn.c:25:6:drv_btn_init	8	static
+../Driver/drv_btn.c:31:6:drv_btn_check_event	16	static

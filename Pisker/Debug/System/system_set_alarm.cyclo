@@ -1,0 +1,4 @@
+../System/system_set_alarm.c:27:6:sys_set_alarm_init	1
+../System/system_set_alarm.c:32:6:sys_set_alarm_fsm_update	18
+../System/system_set_alarm.c:84:10:sys_set_alarm_fsm_action	9
+../System/system_set_alarm.c:119:6:sys_set_alarm_loop	1

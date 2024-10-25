@@ -1,0 +1,17 @@
+@startuml system_manager
+skinparam arrowcolor red
+skinparam stateBackgroundColor yellow  
+
+[*] --> DIGITAL_CLOCK_STATE
+DIGITAL_CLOCK_STATE: Display digital clock icon
+
+DISPLAY_DIGITAL_CLOCK_TIME: Display time: hours, minutes, seconds
+DISPLAY_DIGITAL_CLOCK_DATE: Display date time: date, month, year
+
+DIGITAL_CLOCK_STATE --> DISPLAY_DIGITAL_CLOCK_TIME: Double click
+DISPLAY_DIGITAL_CLOCK_TIME --> DISPLAY_DIGITAL_CLOCK_DATE: Single click
+DISPLAY_DIGITAL_CLOCK_DATE --> DISPLAY_DIGITAL_CLOCK_TIME: Single click
+DISPLAY_DIGITAL_CLOCK_TIME --> DIGITAL_CLOCK_STATE: Hold button >= 3 seconds
+DISPLAY_DIGITAL_CLOCK_DATE --> DIGITAL_CLOCK_STATE: Hold button >= 3 seconds
+
+@enduml

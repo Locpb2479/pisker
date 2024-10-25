@@ -1,0 +1,4 @@
+../BSP/bsp_i2c.c:36:18:bsp_i2c_init	16	static
+../BSP/bsp_i2c.c:43:20:bsp_get_i2c_handle	4	static
+../BSP/bsp_i2c.c:48:18:bsp_i2c_write_buffer	48	static
+../BSP/bsp_i2c.c:73:18:bsp_i2c_read_buffer	48	static

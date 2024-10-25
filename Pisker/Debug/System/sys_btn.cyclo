@@ -1,0 +1,2 @@
+../System/sys_btn.c:41:17:sys_btn_get_event	1
+../System/sys_btn.c:150:6:sys_btn_reset	1
